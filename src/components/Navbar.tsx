@@ -45,7 +45,16 @@ const Navbar = async () => {
                     size: 'sm',
                     className: 'hidden sm:flex items-center gap-1',
                   })}>
-                  Create case
+                  iPhone
+                  <ArrowRight className='ml-1.5 h-5 w-5' />
+                </Link>
+                <Link
+                  href='/configandroid/upload'
+                  className={buttonVariants({
+                    size: 'sm',
+                    className: 'hidden sm:flex items-center gap-1',
+                  })}>
+                  Android
                   <ArrowRight className='ml-1.5 h-5 w-5' />
                 </Link>
               </>
@@ -72,12 +81,21 @@ const Navbar = async () => {
                 <div className='h-8 w-px bg-zinc-200 hidden sm:block' />
 
                 <Link
-                  href='/configure/upload'
+                  href='/configandroid/upload'
                   className={buttonVariants({
                     size: 'sm',
                     className: 'bg-cyan-700 hidden sm:flex items-center gap-1',
                   })}>
-                  Create case
+                  Android
+                  <ArrowRight className='ml-1.5 h-5 w-5' />
+                </Link>
+                <Link
+                  href='/configure/upload'
+                  className={buttonVariants({
+                    size: 'sm',
+                    className: 'bg-cyan-700!important hidden sm:flex items-center gap-1',
+                  })}>
+                  iPhone
                   <ArrowRight className='ml-1.5 h-5 w-5' />
                 </Link>
               </>

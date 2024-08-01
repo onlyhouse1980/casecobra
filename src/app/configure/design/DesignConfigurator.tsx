@@ -164,7 +164,7 @@ const DesignConfigurator = ({
             <NextImage
               fill
               alt='phone image'
-              src='/phone-template.png'
+              src='/iphone/phone-template.png'
               className='pointer-events-none z-50 select-none'
             />
           </AspectRatio>
