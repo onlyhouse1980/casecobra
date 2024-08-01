@@ -21,7 +21,7 @@ export default function Home() {
               </div>
               <h1 className='relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl'>
                 Your Image on a{' '}
-                <span className='bg-green-600 px-2 text-white'>Custom</span>{' '}
+                <span className='bg-cyan-700 px-2 text-white'>Custom</span>{' '}
                 Phone Case
               </h1>
               <p className='mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap'>
@@ -211,7 +211,7 @@ export default function Home() {
             <div className='mx-auto max-w-2xl sm:text-center'>
               <h2 className='order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900'>
                 Upload your photo and get{' '}
-                <span className='relative px-2 bg-green-600 text-white'>
+                <span className='relative px-2 bg-cyan-700 text-white'>
                   your own case
                 </span>{' '}
                 now
@@ -259,7 +259,7 @@ export default function Home() {
               <Link
                 className={buttonVariants({
                   size: 'lg',
-                  className: 'mx-auto mt-8',
+                  className: 'bg-cyan-700 mx-auto mt-8',
                 })}
                 href='/configure/upload'>
                 Create your case now <ArrowRight className='h-4 w-4 ml-1.5' />
