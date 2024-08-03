@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className='bg-black grainy-light'>
+    <div className='grainy-light'>
       <section className='bg-gray-100'>
         <MaxWidthWrapper className='pb-24 pt-10 lg:grid lg:grid-cols-3 sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pb-52'>
           <div className='col-span-2 px-6 lg:px-0 lg:pt-4'>
@@ -207,7 +207,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-black'>
+      <section className='bg-gradient-to-t via-slate-50/50 from-black'>
         <MaxWidthWrapper className='py-24'>
           <div className='mb-12 px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl sm:text-center'>
