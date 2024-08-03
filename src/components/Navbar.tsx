@@ -25,35 +25,24 @@ const Navbar = async () => {
               <>
                 <Link
                   href='/api/auth/logout'
-                  className={buttonVariants({
-                    size: 'sm',
-                    variant: 'ghost',
-                  })}>
+                  className='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'>
                   Sign out
                 </Link>
                 {isAdmin ? (
                   <Link
                     href='/dashboard'
-                    className={buttonVariants({
-                      size: 'sm',
-                      variant: 'ghost',
-                    })}>
+                    className='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded'>
                     Dashboard ✨
                   </Link>
                 ) : null}
                 <Link
-                  href='/configure/upload'>
-                <img alt='Apple Logo Link' src='/Apple_Logo.svg' ></img>    
-                  iPhone
-                </Link>
+                  href='/configandroid/upload'>
+                    <Image alt='android logo' src='/android-logo.png' height={35} width={35} />
+                  </Link>
                 <Link
-                  href='/configandroid/upload'
-                  className={buttonVariants({
-                    size: 'sm',
-                    className: 'hidden sm:flex items-center gap-1',
-                  })}>
-                  Android
-                  <ArrowRight className='ml-1.5 h-5 w-5' />
+                  href='/configure/upload'
+                  >
+                    <Image src='/ioslogo.png' alt='apple logo' height={35} width={35} />
                 </Link>
               </>
             ) : (
