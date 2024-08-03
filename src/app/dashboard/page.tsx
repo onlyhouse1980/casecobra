@@ -22,14 +22,18 @@ import { notFound } from 'next/navigation'
 import StatusDropdown from './StatusDropdown'
 
 const Page = async () => {
+  
   const { getUser } = getKindeServerSession()
   const user = await getUser()
 
-  const ADMIN_EMAIL = process.env.ADMIN_EMAIL
+  const isAdmin = user?.email === process.env.ADMIN_EMAIL
 
-  if (!user || user.email !== ADMIN_EMAIL) {
+
+   const ADMIN_EMAIL = process.env.ADMIN_EMAIL
+
+  if (!isAdmin ) {
     return notFound()
-  }
+  } 
 
   const orders = await db.order.findMany({
     where: {
