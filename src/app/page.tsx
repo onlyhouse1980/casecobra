@@ -9,18 +9,18 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className='bg-slate-50 grainy-light'>
-      <section>
+    <div className='bg-black grainy-light'>
+      <section className='bg-gray-100'>
         <MaxWidthWrapper className='pb-24 pt-10 lg:grid lg:grid-cols-3 sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pb-52'>
           <div className='col-span-2 px-6 lg:px-0 lg:pt-4'>
             <div className='relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start'>
               <div className='absolute w-28 left-0 -top-20 hidden lg:block'>
                 {/* i forgot this div right here in the video, it's purely visual gradient and looks nice */}
-                <div className='absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-slate-50 h-28' />
+                <div className='absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-white h-28' />
                 <Image alt='hero handy' height={500} width={500} src='/snake-1.png' className='w-full' />
               </div>
               <h1 className='relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl'>
-                Your Image on a{' '}
+                Your <span className='bg-cyan-700 px-2 text-white'>Image</span>{' '} on a{' '}
                 <span className='bg-cyan-700 px-2 text-white'>Custom</span>{' '}
                 Phone Case
               </h1>
@@ -79,11 +79,11 @@ export default function Home() {
 
                 <div className='flex flex-col justify-between items-center sm:items-start'>
                   <div className='flex gap-0.5'>
-                    <Star className='h-4 w-4 text-green-600 fill-green-600' />
-                    <Star className='h-4 w-4 text-green-600 fill-green-600' />
-                    <Star className='h-4 w-4 text-green-600 fill-green-600' />
-                    <Star className='h-4 w-4 text-green-600 fill-green-600' />
-                    <Star className='h-4 w-4 text-green-600 fill-green-600' />
+                    <Star className='h-4 w-4 text-yellow-600 fill-green-600' />
+                    <Star className='h-4 w-4 text-yellow-600 fill-green-600' />
+                    <Star className='h-4 w-4 text-yellow-600 fill-green-600' />
+                    <Star className='h-4 w-4 text-yellow-600 fill-green-600' />
+                    <Star className='h-4 w-4 text-yellow-600 fill-green-600' />
                   </div>
 
                   <p>
@@ -99,8 +99,10 @@ export default function Home() {
               <img
                 src='/your-image.png'
                 className='absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block'
+                alt='your image'
               />
               <img
+                alt=''
                 src='/line.png'
                 className='absolute w-20 -left-6 -bottom-6 select-none'
               />
@@ -111,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* value proposition section */}
-      <section className='bg-slate-100 grainy-dark py-24'>
+      <section>
         <MaxWidthWrapper className='flex flex-col items-center gap-16 sm:gap-32'>
           <div className='flex flex-col lg:flex-row items-center gap-4 sm:gap-6'>
             <h2 className='order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900'>
@@ -205,7 +207,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className='bg-black'>
         <MaxWidthWrapper className='py-24'>
           <div className='mb-12 px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl sm:text-center'>
@@ -223,12 +225,14 @@ export default function Home() {
             <div className='relative flex flex-col items-center md:grid grid-cols-2 gap-40'>
               <img
                 src='/arrow.png'
+                alt='arrow'
                 className='absolute top-[25rem] md:top-1/2 -translate-y-1/2 z-10 left-1/2 -translate-x-1/2 rotate-90 md:rotate-0'
               />
 
               <div className='relative h-80 md:h-full w-full md:justify-self-end max-w-sm rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10 lg:rounded-2xl'>
                 <img
                   src='/horse.jpg'
+                  alt="a horse"
                   className='rounded-md object-cover bg-white shadow-2xl ring-1 ring-gray-900/10 h-full w-full'
                 />
               </div>
