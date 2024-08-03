@@ -233,7 +233,7 @@ export default function Home() {
                 <img
                   src='/horse.jpg'
                   alt="a horse"
-                  className='rounded-md object-cover bg-white shadow-2xl ring-1 ring-gray-900/10 h-full w-full'
+                  className='rounded-md object-cover bg-white  ring-1 ring-gray-900/10 h-full w-full'
                 />
               </div>
 
@@ -242,19 +242,19 @@ export default function Home() {
           </div>
 
           <ul className='mx-auto mt-12 max-w-prose sm:text-lg space-y-2 w-fit'>
-            <li className='w-fit'>
+            <li className='w-fit text-white'>
               <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
               High-quality silicone material
             </li>
-            <li className='w-fit'>
+            <li className='w-fit text-white'>
               <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
               Scratch- and fingerprint resistant coating
             </li>
-            <li className='w-fit'>
+            <li className='w-fit text-white'>
               <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
               Wireless charging compatible
             </li>
-            <li className='w-fit'>
+            <li className='w-fit text-white'>
               <Check className='h-5 w-5 text-green-600 inline mr-1.5' />5 year
               print warranty
             </li>
