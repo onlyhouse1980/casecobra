@@ -79,8 +79,8 @@ const DesignConfigurator = ({
   })
 
   const [renderedPosition, setRenderedPosition] = useState({
-    x: 150,
-    y: 205,
+    x: 40,
+    y: 80,
   })
 
   const phoneCaseRef = useRef<HTMLDivElement>(null)
@@ -152,11 +152,11 @@ const DesignConfigurator = ({
   }
 
   return (
-    <div className='relative mt-20 grid grid-cols-1 lg:grid-cols-3 mb-20 pb-20'>
+    <div className='relative mt-10 sm:mt-20 grid grid-cols-1 lg:grid-cols-3 mb-20 pb-20 gap-6 lg:gap-0'>
       <div
         ref={containerRef}
-        className='relative h-[37.5rem] overflow-hidden col-span-2 w-full max-w-4xl flex items-center justify-center rounded-lg border-2 border-dashed border-gray-300 p-12 text-center focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2'>
-        <div className='relative w-60 bg-opacity-50 pointer-events-none aspect-[896/1831]'>
+        className='relative h-[28rem] sm:h-[37.5rem] overflow-hidden col-span-2 w-full max-w-4xl flex items-center justify-center rounded-lg border-2 border-dashed border-gray-300 p-4 sm:p-12 text-center focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2'>
+        <div className='relative w-48 sm:w-60 bg-opacity-50 pointer-events-none aspect-[896/1831]'>
           <AspectRatio
             ref={phoneCaseRef}
             ratio={896 / 1831}
@@ -179,8 +179,8 @@ const DesignConfigurator = ({
 
         <Rnd
           default={{
-            x: 150,
-            y: 205,
+            x: 40,
+            y: 80,
             height: imageDimensions.height / 4,
             width: imageDimensions.width / 4,
           }}
@@ -215,14 +215,14 @@ const DesignConfigurator = ({
         </Rnd>
       </div>
 
-      <div className='h-[37.5rem] w-full col-span-full lg:col-span-1 flex flex-col bg-white'>
+      <div className='h-auto lg:h-[37.5rem] w-full col-span-full lg:col-span-1 flex flex-col bg-white'>
         <ScrollArea className='relative flex-1 overflow-auto'>
           <div
             aria-hidden='true'
             className='absolute z-10 inset-x-0 bottom-0 h-12 bg-gradient-to-t from-white pointer-events-none'
           />
 
-          <div className='px-8 pb-12 pt-8'>
+          <div className='px-4 sm:px-8 pb-12 pt-8'>
             <h2 className='tracking-tight font-bold text-3xl'>
               Customize your case
             </h2>
@@ -370,11 +370,11 @@ const DesignConfigurator = ({
           </div>
         </ScrollArea>
 
-        <div className='w-full px-8 h-16 bg-white'>
+        <div className='w-full px-4 sm:px-8 h-16 bg-white'>
           <div className='h-px w-full bg-zinc-200' />
           <div className='w-full h-full flex justify-end items-center'>
-            <div className='w-full flex gap-6 items-center'>
-              <p className='font-medium whitespace-nowrap'>
+            <div className='w-full flex gap-3 sm:gap-6 items-center'>
+              <p className='font-medium whitespace-nowrap text-sm sm:text-base'>
                 {formatPrice(
                   (BASE_PRICE + options.finish.price + options.material.price) /
                     100

@@ -80,8 +80,8 @@ const Page = async () => {
 
   return (
     <div className='flex min-h-screen w-full bg-muted/40'>
-      <div className='max-w-7xl w-full mx-auto flex flex-col sm:gap-4 sm:py-4'>
-        <div className='flex flex-col gap-16'>
+      <div className='max-w-7xl w-full mx-auto flex flex-col gap-4 px-4 py-4 sm:px-6 sm:py-6'>
+        <div className='flex flex-col gap-8 sm:gap-16'>
           <div className='grid gap-4 sm:grid-cols-2'>
             <Card>
               <CardHeader className='pb-2'>
@@ -121,7 +121,7 @@ const Page = async () => {
             </Card>
           </div>
 
-          <h1 className='text-4xl font-bold tracking-tight'>Incoming orders</h1>
+          <h1 className='text-2xl sm:text-4xl font-bold tracking-tight'>Incoming orders</h1>
 
           <Table>
             <TableHeader>

@@ -85,7 +85,7 @@ const ThankYou = () => {
         </div>
 
         <div>
-          <div className='grid grid-cols-2 gap-x-6 py-10 text-sm'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6 py-10 text-sm'>
             <div>
               <p className='font-medium text-gray-900'>Shipping address</p>
               <div className='mt-2 text-zinc-700'>
@@ -112,7 +112,7 @@ const ThankYou = () => {
             </div>
           </div>
 
-          <div className='grid grid-cols-2 gap-x-6 border-t border-zinc-200 py-10 text-sm'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6 border-t border-zinc-200 py-10 text-sm'>
             <div>
               <p className='font-medium text-zinc-900'>Payment status</p>
               <p className='mt-2 text-zinc-700'>Paid</p>
